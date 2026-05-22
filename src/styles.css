@@ -1,3 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Tangerine:wght@400;700&display=swap');
+
 body{
-    background-color: blue;
+    background-color: #0a192f;
+}
+
+#heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading h3 {
+    margin: 0;
+    font-family: "Cinzel", serif;
+    font-weight: 1000;
+    font-size: 50px;
+    font-style: normal;
+    color: #d4af37;
+}
+
+#boardSection{
+    display: flex;
+    justify-content: space-around;
+}
+
+#playerBoard, #enemyBoard {
+    display: grid;
+    grid-template-columns: repeat(11, 32px);
+    grid-template-rows: repeat(11, 32px);
+    gap: 2px;
+    padding: 8px;
+    gap: 5px;
+    border: 1px solid #d4af37;
+}
+
+.corner, .col-label, .row-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    color: #d4af37;
+    background-color: #0a192f;
+}
+
+
+
+.cell{
+    background-color: #0f2b4d;
+    border: 1px solid #d4af37;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #1e3a5f;
+    transform: scale(1.02);
+}
+
+#welcomeDialog{
+    top: 10%;
+    max-width: 500px;
+    max-height: 700px;
+}
+
+#dialogHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Tangerine", cursive;
+    font-weight: 1000;
+    font-size: 50px;
+}
+
+#welcomeParagraph{
+    font-family: "Cormorant Garamond", serif;
+    font-size: large;
+    font-weight: 1000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
